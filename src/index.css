@@ -1,0 +1,1211 @@
+:root {
+  --primary-color: #bf1717;
+  --secondary-color:#DC5353;
+  --black-color:#000;
+  --white-color: #fff;
+  --light-gray-color:#D9D9D9;
+
+  --border-radius: .5rem;
+
+  --hero-header: clamp(1.5rem, 5vw + 1rem, 5rem);
+  --hero-text: 1.6rem;
+
+  --big-title: 2.8rem;
+  --section-title:  2.4rem;
+  --under-title: 1.6rem;
+  --text-size: 1.1rem;
+  --smal-title: 1.6rem;
+}
+
+@media screen and (max-width:768px) {
+  :root {
+    --hero-text: 1.4rem;
+    --smal-title: 1.1rem;
+  }
+}
+
+@media screen and (max-width:440px) {
+  :root {
+    --hero-text: .8rem;
+    --smal-title: 1.3rem;
+    --section-title: 2rem;
+    --text-size:.9rem;
+  }
+
+}
+
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size:var(--text-size);
+}
+
+
+a {
+  font-size: var(--text-size);
+}
+
+.footer-pusher {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+} 
+
+/* Paddings  */
+
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.padding-block {
+  padding-block: 2rem;
+}
+
+.pt-2 {
+  padding-top:2rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pb-2 {
+  padding-bottom:2rem;
+}
+
+/* padding-samll */
+
+.pb-xs {
+  padding-bottom: .2rem;
+}
+.pb-s{
+  padding-bottom: .4rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+/* Margins */
+.m-0 {
+  margin:0;
+}
+
+.margin-inline {
+  margin-inline: 3rem;
+}
+
+.margin-block {
+  margin-block: 3rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.mr-1 {
+  margin-right: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+
+}
+
+.margin-virt {
+  margin: auto 0;
+}
+
+/* Margin-samll */
+
+.mb-s{
+  margin-bottom: 1rem;
+}
+
+.mb-xs{
+  margin-bottom: .5rem;
+}
+
+.mt-s{
+  margin-top: 1rem;
+}
+
+.mb-xs{
+  margin-top: .5rem;
+}
+
+
+/* main-section
+=============================================================================================== */
+
+.main-padding {
+  padding: 6rem 0;
+}
+
+.wrap {
+  padding: 3rem 12rem;
+}
+
+/* Margins-sections  */
+.margin-section {
+  padding-bottom: 10rem;
+}
+
+@media screen and (max-width:1100px) {
+  .wrap {
+    padding: 1rem 5rem;
+  }
+
+}
+
+@media screen and (max-width:820px) {
+  .wrap {
+    padding: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width:396px) {
+  .wrap {
+    padding: 1rem 1.5rem;
+  }
+}
+
+
+/*
+================================================================================================
+ Navbar 
+================================================================================================*/
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black-color);
+  margin: 0;
+  height: 5em;
+}
+
+
+.logo-container {
+  align-self: center;
+  padding-left: 2rem;
+  cursor: pointer;  
+}
+
+.mobilenNavButton {
+  display: none;
+}
+
+.mobilenNav i {
+  cursor: pointer;
+}
+
+nav .mobilenNav {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+nav .mobilenNav li a{
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+/* Active klass för navigering */
+.active {
+  background-color: #DC5353;
+  padding: .6rem;
+}
+
+@media screen and (max-width: 380px) {
+  .active {
+    padding: .3rem;
+  }
+}
+
+.logo-container i, nav .mobilenNav i {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+nav .mobilenNav li a {
+  font-size: var(--text-size);
+}
+
+@media screen and (max-width: 380px) {
+
+ nav {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  right: -500px;
+  padding: 0;
+  margin-top: 5rem;
+  background-color: #000000;
+  transition: .7s;
+ }
+
+ nav.show {
+  transition: ease-out .7s;
+  right: 0;
+ }
+
+ nav .mobilenNav {
+  flex-direction: column;
+ }
+
+.mobilenNavButton {
+  display: block;
+  align-self: center;
+  color: var(--white-color);
+  padding-right: 2rem;
+  cursor: pointer;
+ }
+
+}
+
+
+/* Hero-section 
+===================================================================================================================
+*/
+.container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 60vh;
+}
+
+/* overlay bilder  */
+.overlay-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.408);
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+/* Herosection font  */
+.hero-header {
+  font-size: var(--hero-header);
+}
+
+.hero-sub-header {
+  font-weight: 800;
+  font-size: var(---hero-text);
+}
+
+.hero-text {
+  max-width: 30rem;
+  font-size: var(--hero-text);
+}
+
+.hero-cta-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+}
+
+/* Hero side component
+============================================================================================================
+*/
+
+.nav-small {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-weight: 700;
+}
+
+.nav-small li {
+  font-size: 1.2rem;
+}
+
+.nav-small li:hover {
+  text-decoration: underline solid rgb(22, 22, 22) 3px ;
+  cursor: pointer;
+  transform: translatey(-2px);
+}
+
+.left-hero-section {
+  width: 60%;
+  justify-content: center;
+}
+
+.hero-text-wrap {
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-container {
+  height: 70vh;
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.img-side {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 980px) {
+  .hero-text-wrap {
+    padding: 0 1rem;
+  }
+
+  .nav-small li {
+    font-size: .8rem;
+  }
+
+}
+@media screen and (max-width: 820px) {
+.hero-container {
+  height: 50vh;
+}
+
+}
+
+
+/* Absolut style 
+============================================================================================================
+*/
+
+.relative {
+  position: relative;
+  text-align: center;
+}
+
+/* Absolute center */
+.absolut-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  font-size: 4rem;
+}
+
+/* Absolut style */
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+}
+
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+
+
+ /* =======================================================================================
+ Components 
+ ==========================================================================================
+ */
+
+ /* =======================================================================================
+ Arrow - component
+ ==========================================================================================
+ */
+
+ .arrow-container {
+  max-width: 408px; 
+  border-bottom: solid 1px;
+  padding-bottom: 1rem;
+ }
+
+ 
+ .arrow-box {
+  max-width: 400px;
+  cursor: pointer;
+  padding-inline: .5rem;
+ }
+
+ .arrow-box i {
+  font-size: 2em;
+  font-weight: 400;
+ }
+
+ .card-arrow-info {
+  max-width: 400px;
+  height: 0;
+  padding-inline: .5rem;
+  transition: ease .6s;
+ }
+
+
+ .card-arrow-info.show {
+  max-width: 400px;
+  height: fit-content;
+  margin-top: .2rem;
+ }
+
+ .card-arrow-info.hide {
+  height: 0;
+  overflow: hidden;
+  max-width: 400px;
+  transition: all ease .4s;
+ }
+
+
+ /* =======================================================================================
+ Image slider
+ ========================================================================================== */
+
+.slider{
+  max-width: 500px;
+  height: 250px;
+  margin-top: 1rem;
+}
+
+.img-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition: translate 301ms ease-in-out;
+}
+
+
+/* =======================================================================================
+Cards
+ ==========================================================================================
+ */
+
+ /* Card-grid-style 
+ =================================================================
+ */
+
+ .card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+  margin: 0 auto;
+ }
+ 
+ .flex-item-25 {
+   flex: 1 1 calc(25% - 20px);
+ }
+ 
+ .flex-item-33 {
+  flex: 1 1 calc(33% -20px);
+ }
+
+ .flex-item-50 {
+   flex: 1 1 calc(50% - 20px);
+   border-radius: 4px;
+ }
+ 
+ @media screen and (max-width:620px) {
+  .flex-item-50 {
+    flex: 1 1 calc(100% - 20px);
+  }
+
+ }
+ @media screen and (max-width:440px) {
+  .flex-item-25 {
+    flex: 1 1 calc(100% - 20px);
+  }
+
+ }
+
+
+/* =======================================================================================
+Four - Cards
+ ==========================================================================================
+ */
+ .img-full-card-wrap {
+  height: 400px;
+  width: 100%;
+  position: relative;
+ }
+
+
+/* =======================================================================================
+ TvCardCompoent
+ ==========================================================================================
+ */
+
+ .tv-card{
+  width:  20rem;
+  height: 13rem;
+ } 
+
+.img-tvcard {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  background-position: center;
+  border-radius: .4rem;
+}
+
+.tv-card-header {
+  font-size: .9rem;
+}
+
+/* =======================================================================================
+ WorkerCard - img and info
+ ==========================================================================================
+ */
+ .worker-card-bod {
+  width: 200px;
+  height: 400px;
+ }
+
+ .img-worker {
+  width:100%;
+  height: 250px;
+  object-fit: cover;
+ }
+
+ .img-worker:hover {
+    transform: translatey(-5px); 
+ }
+
+ 
+
+/* =======================================================================================
+ WorkerCard
+ ==========================================================================================
+ */
+
+.card-bodyy {
+  width: 20rem;
+  height: 8rem;
+  background-color: #e4c95f;
+  display: flex;
+}
+
+.card-info {
+  width: 70%;
+  display: flex;
+  justify-content: center; 
+}
+
+.img-header {
+    width: 7.8rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================================================================================
+staff-card
+============================================================================================ */
+
+.card-bodyn {
+  width: 300px;
+}
+
+.img-circle {
+  width: 13rem;
+  height: 13rem;
+  border-radius:50%;
+  border: solid rgb(8, 8, 8) 1px;
+  margin: 1rem 0;
+  object-fit: cover;
+}
+
+.img-stil {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  background-position: center;
+}
+
+/* =========================================================================================
+full-card
+============================================================================================
+ */
+ .full-card-wrap {
+  padding: 1rem 6rem;
+  border-radius: .2rem;
+ }
+
+ .full-card {
+  height: 400px;
+  flex-direction: row-reverse;
+  align-self: center;
+ }
+
+ .full-card i {
+  font-size: 6rem;
+ }
+
+ @media screen and (max-width: 440px) {
+
+  .full-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 100%;
+   }
+
+   .full-card i {
+    font-size: 7rem;
+   }
+   .full-card-wrap {
+    padding: 3rem 3rem;
+   }
+ }
+
+
+ /* =========================================================================================
+Menu-Component Pizza
+============================================================================================
+*/
+
+.primary-menu-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.sub-menu-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.third-sub-title {
+  font-size: 1.1rem;
+}
+
+.menu-padding {
+  padding: 3rem 4rem;
+}
+
+.flex-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.border-doubble {
+border: double black 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .felx-menu {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .menu-padding {
+    padding: 1rem 2rem;
+  }
+}
+
+
+/* =========================================================================================
+Split-Card
+============================================================================================ */
+
+.split-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+  height: 400px;
+}
+
+.split-section {
+  width: 50%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.img-style {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 767px) {
+  
+  .split-card-wrapper {
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+  }
+
+  .split-section {
+    width: 100%;
+    height: 50%;
+  }
+
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+
+}
+
+
+/* ======================================================================================================
+Card-component  
+========================================================================================================= */
+
+.card-body {
+  border-radius: .5rem;
+  padding: .3rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+
+.image-wrapper {
+  height: 14rem;
+  border-radius: 1rem;
+}
+
+/* ======================================================================================================
+TextCard-components  
+========================================================================================================= */
+
+/* ======================================================================================================
+TextImg - component
+========================================================================================================= */
+.text-section {
+  max-width: 60rem;
+  pad: 3rem;
+}
+
+.img-section {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+/* ======================================================================================================
+EmployeeCard-component  
+========================================================================================================= */
+
+.card-kropp {
+  background-color: rgb(225, 235, 225);
+  padding: 2.1rem;
+  border-radius: 1.2rem;
+}
+
+.green {
+  color: green;
+}
+
+.dollar {
+  cursor: pointer;
+}
+
+
+/* Rubriker */
+.section-title {
+  font-weight: 700;
+  font-size: var(--section-title);
+  padding-bottom: .6rem;
+  margin: 0;
+}
+
+.small-title {
+  font-weight: 600;
+  font-size: var(--smal-title);
+  padding: 0;
+  margin: 0;
+}
+
+.big-title {
+  font-size: var(--big-title);
+  padding-bottom: .6rem;
+}
+
+.under-title {
+  max-width: 340px;
+  font-size: 1.6rem;
+  font-size: var(--under-title);
+}
+
+/* Buttons */
+.btn-cta {
+  background-color: var(--white-color);
+  padding: .3rem .7rem;
+  border: black solid  1px;
+  border-radius: 3px;
+  font-size: var(--text-size);
+  margin-top: 1.4rem;
+  cursor: pointer;
+} 
+
+.btn-cta:hover {
+  background-color: rgba(228, 220, 220, 0.723);
+}
+
+.btn-pill {
+  background-color: #7ebda5;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  padding: .5em 2em;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-pill:hover {
+  background-color: #45f8b3;
+}
+
+.btn-invert {
+  padding: .3em .8em;
+  background-color: var(--white-color);
+  border: solid black 2.5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--text-size);
+}
+
+.btn-invert:hover {
+  background-color: rgba(245, 244, 244, 0.62) ;
+}
+
+/* cta button about  */
+.cta-button-about {
+  border: none;
+  padding: .4em .8em;
+  width: 11em;
+  margin: 0 auto;
+  border-radius: .1em;
+}
+
+.cta-button-about:hover {
+  border: none;
+  padding: .4em .8em;
+  width: 11em;
+  margin: 0 auto;
+  background-color: #f2f3f3;
+}
+ 
+.cta-button-about a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: var(--text-size);
+}
+
+
+/* Modal */
+.modal-box {
+  position: fixed;
+  background-color: #ffffff;
+  border: solid black;
+  width:30rem;
+  height:20rem;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.button-modal {
+  position: absolute;
+  top: 10px;
+  left: 93%;
+  cursor: pointer;
+  background-color: var(--white-color);
+  border: none;
+  font-size: 1em;
+}
+
+.modal {
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  font-size: 4rem;
+}
+
+
+
+/* Flex css */
+
+/* flex justify */
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Flex wrap  */
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Flex-gap */
+.flex-gap-2 {
+  display: flex;
+  gap: 2rem;
+}
+
+.align-self {
+  align-self: center;
+}
+
+.align-items {
+  align-items: center;
+}
+
+/* Färger */
+.text-white {
+  color: var(--white-color);
+}
+
+.text-black {
+  color: var(--black-color)
+}
+
+/*Bakgrundsfärger */
+
+.bg-light-gray {
+  background-color: var(--light-gray-color);
+}
+
+.bg-black {
+  background-color: var(--black-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color:var(--secondary-color);
+}
+
+
+.bg-dark-green {
+  background-color: #0b734b;
+}
+
+/* Borders */
+
+.border-black {
+  border: solid black 5px;
+}
+
+.border-bottom {
+  border-bottom: var(--black-color) solid .8px;
+  padding-bottom: .9rem;
+}
+
+/* Border radius */
+.border-radius {
+  border-radius: var(--border-radius);
+}
+
+
+/* Former */
+.circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+
+/* Buttons */
+.link {
+  text-decoration: none;
+  color: #dec33d;
+  padding-top: 4rem;
+}
+
+/* Button One 
+============================================================
+*/
+
+.button-one {
+  font-size: 1em;
+  background-color: #000;
+  padding: .3rem .7rem;
+  color: var(--white-color);
+  cursor: pointer;
+  border: none;
+  font-weight: 300;
+}
+
+.button-one a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.button-one:hover {
+  background-color: #0000009e;
+}
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+/* Font-styles */
+.text-bold {
+  font-weight: 700;
+}
+
+.text-semi-bold {
+  font-weight: 500;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.text-dec-none {
+  text-decoration: none;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+
+/* Text components  
+=================================================================
+*/
+
+.text-width {
+  max-width: 600px;
+  font-size: var(--text-size);
+}
+
+
+/* Footer börjar här 
+=====================================================================================================*/
+.footer{
+  width: 100%;
+  background-color: var(--black-color);
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 60rem;
+  padding: 5rem;
+}
+
+.footer-list-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.footer-content ul {
+  list-style: none;
+  font-size: 1.3rem;
+  padding: 0;
+}
+ 
+.fotter-header {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  padding: 0;
+  color: #D9D9D9;
+}
+
+.footer-content ul  li {
+  margin-bottom: .3rem;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-content ul  li:hover {
+  color: #d2d8d6;
+}
+
+@media screen and (max-width: 580px) {
+  .footer-content {
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+}
+
+.footer-list-content {
+  flex-wrap: wrap-reverse;
+  justify-content: start;
+  width: fit-content;
+  height: 100%;
+  gap: 3rem;
+}
+
+
+}
