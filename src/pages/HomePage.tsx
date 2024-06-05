@@ -14,7 +14,11 @@ import SpaceingSectionComponent from "../components/SpacingSectionComponent";
 const HomePage = () => {
     return (
         <>
-            <HeroSideComponent />
+            <HeroSideComponent
+                heroheader={"Elstolpar.se"}
+                heroText={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde debitis magni recusandae eveniet ullam qui accusamus repudiandae suscipit. Nihil cum"}
+                herTextLabel={"Vi laddar du kör"}
+                heroButton={"Läs mer"} />
             <main className="main-padding">
                 <section className="wrap">
                     <SpaceingSectionComponent spacingClass={"margin-section"}>

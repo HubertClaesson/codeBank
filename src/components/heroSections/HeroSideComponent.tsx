@@ -1,6 +1,14 @@
 
 
-const HeroSideComponent = () => {
+type HeroSideProps = {
+   heroheader: string
+   heroText: string
+   herTextLabel: string
+   heroButton: string
+}
+
+
+const HeroSideComponent = (props: HeroSideProps) => {
    return (
       <>
          <section className="hero-container ">
@@ -12,10 +20,10 @@ const HeroSideComponent = () => {
                </menu>
                <div className="hero-text-wrap">
                   <article className="align-self">
-                     <h1 className="hero-header m-0 mb-s">Elstolpar.se</h1>
-                     <div className="mb-s hero-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde debitis magni recusandae eveniet ullam qui accusamus repudiandae suscipit. Nihil cum</div>
-                     <div className="hero-text text-bold pb-2">Vi laddar du kör</div>
-                     <button className="btn-invert">Läs mer</button>
+                     <h1 className="hero-header m-0 mb-s">{props.heroheader}</h1>
+                     <div className="mb-s hero-text">{props.heroText}</div>
+                     <div className="hero-text text-bold pb-2">{props.herTextLabel}</div>
+                     <button className="btn-invert">{props.heroButton}</button>
                   </article>
                </div>
             </section>
