@@ -11,7 +11,7 @@ const SplitCard = (props: props) => {
         <>
 
             <div className="split-card-wrapper">
-                <article className="flex-center bg-light-gray split-section">
+                <article className="flex-center bg-light-gray split-section border-radius">
                     <div className=" align-self p-2 ">
                         <div className="big-title text-bold">{props.splitTitleLarge}</div>
                         <div className="under-title">
@@ -19,7 +19,7 @@ const SplitCard = (props: props) => {
                         </div>
                     </div>
                 </article>
-                <section className="split-section">
+                <section className="split-section border-radius">
                     <img className="img-style"
                         src={props.img}
                         alt={props.alt}
