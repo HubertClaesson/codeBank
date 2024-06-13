@@ -19,6 +19,7 @@ const HomePage = () => {
                 heroText={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde debitis magni recusandae eveniet ullam qui accusamus repudiandae suscipit. Nihil cum"}
                 herTextLabel={"Vi laddar du kör"}
                 heroButton={"Läs mer"} />
+
             <main className="main-padding">
                 <section className="wrap">
                     <SpaceingSectionComponent spacingClass={"margin-section"}>
@@ -34,7 +35,7 @@ const HomePage = () => {
                         <FlexGridComponent cardGrid={"card-grid"}>
                             <CtaSectionAbout
                                 buttonLable="Läs mer"
-                                ctaTextHeader="Instalation"
+                                ctaTextHeader="Installation"
                                 text="Lorem ipsum dolor 
                             sit amet, consectetur 
                             adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
@@ -124,11 +125,11 @@ const HomePage = () => {
                     <SpaceingSectionComponent spacingClass={"margin-section"}>
                         <FlexGridComponent cardGrid={"card-grid"}>
                             <StaffCardCompoent img={"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt={""} email={"hans.hansson@info.com"} tele={"015-4453"} job={"VD"} name={"Hans Hansson"} />
-                            <StaffCardCompoent img={"https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt={""} email={"Erik.andersson@info.com"} tele={" 015-4645"} job={"IT - konsult"} name={"Erik Svensson"} />
-                            <StaffCardCompoent img={"https://images.unsplash.com/photo-1602233158242-3ba0ac4d2167?q=80&w=2836&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt={""} email={"johannna.andersson@info.com"} tele={"015-4645"} job={"Säljare"} name={"Andrea Andersson"} />
-                            <StaffCardCompoent img={"https://images.unsplash.com/photo-1583692331501-5339b76cbf1e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt={""} email={"jonas.andersson@info.com"} tele={"015-4645"} job={"Säljare"} name={"Jonas Stensson"} />
+                            <StaffCardCompoent img={"https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt={""} email={"Erik.svensson@info.com"} tele={" 015-4645"} job={"IT - konsult"} name={"Erik Svensson"} />
+                            <StaffCardCompoent img={"https://images.unsplash.com/photo-1602233158242-3ba0ac4d2167?q=80&w=2836&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt={""} email={"andrea.andersson@info.com"} tele={"015-4645"} job={"Säljare"} name={"Andrea Andersson"} />
+                            <StaffCardCompoent img={"https://images.unsplash.com/photo-1583692331501-5339b76cbf1e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt={""} email={"jonas.stensson@info.com"} tele={"015-4645"} job={"Säljare"} name={"Jonas Stensson"} />
                             <StaffCardCompoent img={"https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt={""} email={"emil.andersson@info.com"} tele={"015-4645"} job={"Installatör"} name={" Emil Andersson"} />
-                            <StaffCardCompoent img={"https://plus.unsplash.com/premium_photo-1672239496290-5061cfee7ebb?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt={""} email={"johan.andersson@info.com"} tele={"015-4645"} job={"Säljare"} name={"Johan Skog"} />
+                            <StaffCardCompoent img={"https://plus.unsplash.com/premium_photo-1672239496290-5061cfee7ebb?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt={""} email={"johan.skog@info.com"} tele={"015-4645"} job={"Säljare"} name={"Johan Skog"} />
                         </FlexGridComponent>
                     </SpaceingSectionComponent>
                 </section>

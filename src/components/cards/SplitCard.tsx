@@ -9,7 +9,6 @@ type props = {
 const SplitCard = (props: props) => {
     return (
         <>
-
             <div className="split-card-wrapper">
                 <article className="flex-center bg-light-gray split-section border-radius">
                     <div className=" align-self p-2 ">

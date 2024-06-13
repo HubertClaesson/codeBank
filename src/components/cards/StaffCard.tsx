@@ -13,7 +13,6 @@ const StaffCardCompoent = (prop: StaffcardProps) => {
         <>
             <section className="card-bodyn bg-black flex-item-25">
                 <img className="img-stil" src={prop.img} alt={prop.alt} />
-                {/* </section> */}
                 <article className=" card-contents text-center text-white p-1">
                     <h3 className="m-0 p-0">{prop.name}</h3>
                     <p className="text-italic">{prop.job}</p>

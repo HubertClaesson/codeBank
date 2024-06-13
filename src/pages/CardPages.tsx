@@ -44,7 +44,7 @@ const CardPage = () => {
 
                     <SpaceingSectionComponent spacingClass={"margin-section"}>
                         <FullCard
-                            FullCardSmall='Alla våra pizzor är bakade i en  italiensk vedledad pizza ugn.'
+                            FullCardSmall='Alla våra pizzor är bakade i en italiensk vedledad pizzaugn.'
                             FullCardMedium='Den bästa pizzan'
                             FullCardLarge='Smaker från Italien'
                             FullCardIcon={'bi bi-pie-chart'}
@@ -98,17 +98,17 @@ const CardPage = () => {
                             <CardComponent
                                 cardHeader={"Coffee"}
                                 img={"https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
-                                alt={"food"}
+                                alt={"coffee"}
                                 color={"bg-primary text-white"} />
                             <CardComponent
                                 cardHeader={"Coffee"}
                                 img={"https://images.unsplash.com/photo-1587022058028-c084ee8dc31f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
-                                alt={"food"}
+                                alt={"coffee"}
                                 color={"bg-secondary "} />
                             <CardComponent
                                 cardHeader={"Coffee"}
                                 img={"https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
-                                alt={"food"}
+                                alt={"coffee"}
                                 color={"bg-dark-green"} />
                         </FlexGridComponent>
                     </SpaceingSectionComponent>
@@ -266,7 +266,6 @@ const CardPage = () => {
                             TextSplitText={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum minima officia consequatur. Ex minus voluptatibus optio ducimus. Commodi quo soluta repudiandae voluptatibus dolorem delectus explicabo atque vel dolor! Et, hic! delectus explicabo atque vel dolor! Et, hic!delectus explicabo atque vel dolor! Et, hic!delectus explicabo atque vel dolor! Et, hic!"}
                             TextSplitSmallHeader={"Lite mer text om allt"} />
                     </SpaceingSectionComponent>
-
 
                     <SpaceingSectionComponent spacingClass={"margin-section"}>
                         <ImageSliderComponent />
